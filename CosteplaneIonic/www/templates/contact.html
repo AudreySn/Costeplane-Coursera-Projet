@@ -1,0 +1,32 @@
+<ion-view view-title="Contact">
+  <ion-content>
+    <h1>Contact</h1>
+    
+    <form ng-submit="submitMail()" method="POST">
+      <div class="list" >
+        <label class="item item-input">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="contactData.firstName" name="">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Last Name</span>
+          <input type="text" ng-model="contactData.lastName">
+        </label>
+         <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="contactData.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Message</span>
+          <input type="text" ng-model="contactData.message">
+        </label>
+      
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" >Send Mail</button>
+        </label>
+      </div>
+    </form>
+    
+  </ion-content>
+  
+</ion-view>

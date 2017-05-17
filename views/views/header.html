@@ -1,0 +1,57 @@
+
+<div ng-controller="NavigationController">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                    ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Domaine de Costeplane</a>
+        </div>
+ 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+ 
+     
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                    <a href="#!/LO">
+                       Location
+                    </a>
+              
+                </li>
+                 <li>
+                    <a href="#!/RE">
+                        Réservation et Tarifs
+                    </a>
+              
+                </li>
+             
+                <li>
+                    <a href="#!/CO">
+                        Contact
+                    </a>
+              
+                </li>
+                <li>
+                    <a href="#!/EN">
+                        <img src="images/ENflag.png"  style="width:35px;height:20px;">
+                    </a>
+              
+                </li>
+                <li>
+                    <a href="/" ng-click="classfrenchflag()">
+                        <img id="frenchflag" src="images/FRflag.png" class="frenchflag" style="width:35px;height:20px">
+                    </a>
+              
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</div>
+
+

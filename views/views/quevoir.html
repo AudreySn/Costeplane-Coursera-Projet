@@ -1,0 +1,39 @@
+
+<div class="container" ng-controller="QuevoirController">
+<div class="col-md-12" ><h1 style="text-align:center;"> Que faire à quelle saison?</h1><br></div>
+
+    <div class="col-md-8 col-md-offset-2">
+    <uib-tabset active="active">
+
+     <uib-tab index="0">
+      <uib-tab-heading>
+        <i class="glyphicon glyphicon-certificate" style="color:yellow;"></i> En été
+      </uib-tab-heading>
+   <ng-image-gallery images="images" methods="methods" conf="conf" thumbnails="thumbnails" inline="inline" bubbles="bubbles" img-bubbles="imgBubbles" bg-close="bgClose" on-open="opened();" on-close="closed();" bg-close="false"></ng-image-gallery>
+    </uib-tab>
+    
+    
+    <uib-tab index="1">
+      <uib-tab-heading>
+        <i class="glyphicon glyphicon-leaf" style="color:orange;"></i> En automne
+      </uib-tab-heading>
+       <ng-image-gallery images="images2" methods="methods2" conf="conf" thumbnails="thumbnails" inline="inline" bubbles="bubbles" img-bubbles="imgBubbles" bg-close="bgClose" on-open="opened();" on-close="closed();" bg-close="false"></ng-image-gallery>
+    </uib-tab>
+    
+     <uib-tab index="2">
+      <uib-tab-heading>
+        <i class="glyphicon glyphicon-tree-conifer" style="color:black"></i> En hiver
+      </uib-tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </uib-tab>
+    
+     <uib-tab index="3">
+      <uib-tab-heading>
+        <i class="glyphicon glyphicon-tree-deciduous" style="color:green;"></i> Au printemps
+      </uib-tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </uib-tab>
+    
+  </uib-tabset>
+</div>
+</div>

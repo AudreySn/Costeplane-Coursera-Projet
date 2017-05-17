@@ -1,0 +1,36 @@
+<ion-view view-title="Reservation">
+  <ion-content>
+    <h1>Reservation</h1>
+    
+    <form ng-submit="submitReservation()">
+      <div class="list" >
+        <label class="item item-input">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="reservationData.firstName" name="">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Last Name</span>
+          <input type="text" ng-model="reservationData.lastName">
+        </label>
+         <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="reservationData.email">
+        </label>
+        <ion-item>
+          <ion-label>From</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ngModel="reservationData.startDate"></ion-datetime>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>To</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ngModel="reservationData.startDate"></ion-datetime>
+        </ion-item>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" >Reserve</button>
+        </label>
+      </div>
+    </form>
+    
+  </ion-content>
+  
+</ion-view>
